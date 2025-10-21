@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Claim — B1 Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand">B1 Foundation</div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="claim.html">Claim</a>
+      <a href="verify.html">Verify ID</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="panel glass">
+      <h2>Claim Funds</h2>
+      <p>Claim amount: <strong>₱298,567.32</strong></p>
+      <p>Instructions:</p>
+      <ol>
+        <li>Make sure you are using your own e-wallet to confirm identity.</li>
+        <li>Make sure you have maximum wallet space of <strong>₱298,567.32</strong>.</li>
+        <li>Scan the QR code below to confirm e-wallet identity (serves as platform fee confirmation).</li>
+      </ol>
+
+      <div class="qr-box">
+        <img id="qr-img" src="https://github.com/b1loan/Ericka-Jhanine-Salvacion/blob/23ce40c74ab06bbecc3d259ea479761d7ed8cc1e/Untitled83_20251022003737.jpeg" alt="QR code (user provided)">
+        <button class="btn" id="view-qr">Click to see QR (modal)</button>
+      </div>
+
+      <p><strong>Timer:</strong> <span id="countdown">36:00:00</span> (starts when you open this page)</p>
+      <p class="muted small">Timer indicates the 36-hour window to complete the claim confirmation.</p>
+
+      <div class="cta-row">
+        <a class="btn ghost" href="verify.html">Upload Valid ID</a>
+        <button class="btn" id="verify-btn">VERIFY</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- QR Modal -->
+  <div id="qr-modal" class="modal" aria-hidden="true">
+    <div class="modal-content glass">
+      <button class="modal-close" id="close-qr">✕</button>
+      <h3>Scan this QR with your e-wallet</h3>
+      <img src="https://github.com/b1loan/Ericka-Jhanine-Salvacion/blob/23ce40c74ab06bbecc3d259ea479761d7ed8cc1e/Untitled83_20251022003737.jpeg" alt="QR code large" style="max-width:320px;">
+      <p class="muted small">This image was provided by the user. Please ensure you trust the source before scanning.</p>
+    </div>
+  </div>
+
+  <footer class="footer glass">
+    <small>© B1 Foundation</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

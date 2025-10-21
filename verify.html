@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Verify ID — B1 Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="topnav">
+    <div class="brand">B1 Foundation</div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="claim.html">Claim</a>
+      <a href="verify.html">Verify ID</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="panel glass">
+      <h2>Upload Valid ID</h2>
+      <p>Please upload a government-issued ID image to proceed with identity verification. This is a front-end demo only — no files are transmitted off your device by this template.</p>
+
+      <form id="id-form">
+        <label class="file-label">Select ID image
+          <input type="file" id="id-file" accept="image/*">
+        </label>
+        <div style="margin-top:12px;">
+          <button class="btn" type="button" id="upload-btn">Upload & Preview</button>
+          <button class="btn ghost" type="button" id="skip-btn">Skip</button>
+        </div>
+      </form>
+
+      <div id="preview" style="margin-top:12px;"></div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <small>© B1 Foundation</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
